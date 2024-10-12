@@ -1,0 +1,9 @@
+#debug{
+    width:640px;
+    background-color: lightseagreen;
+    color:black;
+
+    display:flex;
+    justify-content: space-between;
+    padding:4px;
+}
