@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+# Overview
+In this game, the player is represented by a small spaceship at the bottom of the screen. The player controls the spaceships left-right movement by moving the mouse and can fire projectiles upwards towards enemies by clicking. Enemies will be moving above the player firing their own projectiles downwards. If the player destroys all of the enemies they can move on the next wave. If the player is hit by an enemy projectile it is game over. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The goal of this project was to learn how to make an interactive web application.
 
-Currently, two official plugins are available:
+# Development Environment
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visual Studio Code 1.93.1
 
-## Expanding the ESLint configuration
+Languages and Libraries:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Typescript - Web Audio API, Canvas API
+Vite
+React
+React-Router-Dom
 
-- Configure the top-level `parserOptions` property like this:
+Graphics created with GIMP 2.10.32
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+# Useful Websites
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+* [MDN Web Docs](https://developer.mozilla.org/en-US/)
+* [Pixabay - Royalty Free Sound Effects](https://pixabay.com/sound-effects/)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+# Future Work
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+In the future I would like to make the following changes:
+* Add more enemy waves with different enemy types
+* Replace sound effects with custom made ones
+* Animate the background instead of a static image
+* Add settings to adjust mouse sensitivity, volume, etc.
+* Add music
